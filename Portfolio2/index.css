@@ -1,0 +1,204 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Geral */
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background: linear-gradient(to bottom, #233A11, #0E2100);
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: rgba(6, 20, 0, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Pirata One', cursive;
+  font-size: 34px;
+  color: #E5FF00;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: 'Denk One', sans-serif;
+  color: #E5FF00;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #1a2a10;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+nav a:hover, nav a.ativo {
+  background: #2a441a;
+  transform: scale(1.05);
+}
+
+/* Seções */
+.section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards */
+.card {
+  background: rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 950px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Perfil */
+.perfil-card {
+  flex-direction: row;
+}
+
+.perfil-img.grande {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Habilidades */
+.habilidades-card {
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.1);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #E5FF00;
+}
+
+/* Spotify */
+.icon-grande {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Instagram */
+.insta-card {
+  justify-content: space-between;
+}
+
+.foto-insta {
+  max-width: 200px;
+  border-radius: 12px;
+}
+
+/* Lana */
+.foto-lana {
+  max-width: 260px;
+  border-radius: 12px;
+}
+
+/* Texto */
+.texto {
+  max-width: 500px;
+}
+
+h2 {
+  font-family: 'Denk One', sans-serif;
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #E5FF00;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #00ff77, #00cc88);
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Denk One', sans-serif;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.07);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(6, 20, 0, 0.8);
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 40px;
+}
